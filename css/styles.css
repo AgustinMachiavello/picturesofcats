@@ -1,0 +1,79 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - CSS lol
+*/
+
+/* Mobile first approach */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+html, body {
+    width: 100%; /* Percentage is more suitable for width */
+    /*height: 100%; Viewport Height is more sutibale for height*/
+    /*width: 100vw;*/
+    height: 100vh;
+    background-color: #6c5ce7;
+}
+
+#pictures {
+  padding: 5%;
+}
+
+.column {
+    /* Prevent vertical gaps */
+    line-height: 0;
+
+    -webkit-column-count: 5;
+    -webkit-column-gap: 14px;
+    -moz-column-count: 5;
+    -moz-column-gap: 14px;
+    column-count: 5;
+    column-gap: 14px;
+}
+
+.image-wrapper {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+/* Desktop Devices */
+@media (max-width: 1200px) {
+  .column {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+  }
+}
+
+/* Tablet Devices */
+@media (max-width: 1000px) {
+  .column {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+  }
+}
+
+/* Small Devices */
+@media (max-width: 800px) {
+  .column {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .column {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+  }
+}
