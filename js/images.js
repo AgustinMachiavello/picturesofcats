@@ -25,7 +25,7 @@ for (let indexFolder=0; indexFolder < dictKeys.length; indexFolder++) {
             image.classList.add("image-wrapper");
 
             image.setAttribute("alt", fileName);
-            image.setAttribute("src", `../pictures/${folderName}/${fileName}`);
+            image.setAttribute("src", `pictures/${folderName}/${fileName}`);
 
             blockWrapper.appendChild(image);
             picturesContainer.appendChild(blockWrapper);
